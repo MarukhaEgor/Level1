@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="main_btns_paddings_16">16dp</dimen>
+    <dimen name="rnd_social_btn_size">50dp</dimen>
+    <dimen name="border_with">2dp</dimen>
+    <dimen name="btn_elevation">0dp</dimen>
+    <dimen name="edit_btn_height">40dp</dimen>
+    <dimen name="settings_label_paddings">16dp</dimen>
+    <dimen name="avatar_profile_padding">48dp</dimen>
+    <dimen name="profile_view_top_part_height">360dp</dimen>
+</resources>

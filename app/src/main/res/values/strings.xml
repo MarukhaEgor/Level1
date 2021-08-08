@@ -6,4 +6,6 @@
     <string name="profile_view_adress">5295 Gaylord Walks Apk. 110</string>
     <string name="profile_view_edit_btn">Edit Profile</string>
     <string name="profile_view_contacts_btn">view my contacts</string>
+    <string name="e_mail_hint">E-mail</string>
+    <string name="password_hint">Password</string>
 </resources>

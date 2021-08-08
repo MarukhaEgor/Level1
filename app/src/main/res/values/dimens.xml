@@ -8,4 +8,7 @@
     <dimen name="settings_label_paddings">16dp</dimen>
     <dimen name="avatar_profile_padding">48dp</dimen>
     <dimen name="profile_view_top_part_height">360dp</dimen>
+    <dimen name="profile_view_soc_btn_mStart">48dp</dimen>
+    <dimen name="profile_view_soc_btn_mTop">62dp</dimen>
+    <dimen name="profile_view_soc_btn_mEnd">48dp</dimen>
 </resources>

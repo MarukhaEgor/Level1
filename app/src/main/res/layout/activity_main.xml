@@ -18,9 +18,9 @@
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/imageView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/avatar_profile_padding"
+            style="@style/profile_avatar"
+            android:layout_width="229dp"
+            android:layout_height="158dp"
             android:src="@drawable/img"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -28,23 +28,19 @@
 
         <TextView
             android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/settings_label_style"
             android:layout_marginStart="@dimen/settings_label_paddings"
             android:layout_marginTop="@dimen/settings_label_paddings"
-            android:fontFamily="@font/open_sans_light"
-            android:includeFontPadding="false"
             android:text="@string/profile_view_settings"
-            android:textColor="@color/white"
+            android:textSize="24sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/profile_name_Style"
             android:text="@string/profile_view_name"
-            android:textColor="@color/white"
+            android:textSize="18sp"
             app:layout_constraintBottom_toTopOf="@+id/textView3"
             app:layout_constraintEnd_toEndOf="@+id/imageView"
             app:layout_constraintStart_toStartOf="@+id/imageView"
@@ -52,10 +48,9 @@
 
         <TextView
             android:id="@+id/textView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/profile_datastyle"
             android:text="@string/profile_view_profession"
-            android:textColor="@color/grey_text_color"
+            android:textSize="14sp"
             app:layout_constraintBottom_toTopOf="@+id/textView4"
             app:layout_constraintEnd_toEndOf="@+id/textView2"
             app:layout_constraintStart_toStartOf="@+id/textView2"
@@ -63,10 +58,8 @@
 
         <TextView
             android:id="@+id/textView4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/profile_datastyle"
             android:text="@string/profile_view_adress"
-            android:textColor="@color/grey_text_color"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/textView2"
             app:layout_constraintStart_toStartOf="@+id/textView2"
@@ -77,74 +70,52 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/edit_profile_btn"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/edit_btn_height"
-        android:layout_marginStart="@dimen/main_btns_paddings_16"
-        android:layout_marginEnd="@dimen/main_btns_paddings_16"
-        android:layout_marginBottom="@dimen/main_btns_paddings_16"
-        android:background="@drawable/round_button"
         android:text="@string/profile_view_edit_btn"
-        android:textAllCaps="false"
         app:layout_constraintBottom_toTopOf="@id/view_contacts"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        style="@style/profile_btn_edit" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/view_contacts"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:layout_marginStart="@dimen/main_btns_paddings_16"
-        android:layout_marginEnd="@dimen/main_btns_paddings_16"
-        android:layout_marginBottom="@dimen/main_btns_paddings_16"
-        android:background="@drawable/round_button"
-        android:backgroundTint="@color/main_orange"
         android:text="@string/profile_view_contacts_btn"
-        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        style="@style/profile_btn_view" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/floatingActionButton"
-        android:layout_width="@dimen/rnd_social_btn_size"
-        android:layout_height="@dimen/rnd_social_btn_size"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="62dp"
-        android:backgroundTint="@color/white"
-        android:clickable="true"
         android:src="@drawable/fb_img_btn"
+        android:layout_marginStart="@dimen/profile_view_soc_btn_mStart"
+        android:layout_marginTop="@dimen/profile_view_soc_btn_mTop"
         app:backgroundTint="@color/main_orange"
         app:borderWidth="@dimen/border_with"
         app:elevation="@dimen/btn_elevation"
         app:fabCustomSize="@dimen/rnd_social_btn_size"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
-        app:tint="@color/main_orange" />
+        app:tint="@color/main_orange"
+        style="@style/profile_soc_btn" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/floatingActionButton2"
-        android:layout_width="@dimen/rnd_social_btn_size"
-        android:layout_height="@dimen/rnd_social_btn_size"
-        android:backgroundTint="@color/white"
-        android:clickable="true"
+        app:fabCustomSize="@dimen/rnd_social_btn_size"
         android:src="@drawable/linkin_btn_img"
         app:backgroundTint="@color/main_orange"
         app:borderWidth="@dimen/border_with"
         app:elevation="@dimen/btn_elevation"
-        app:fabCustomSize="@dimen/rnd_social_btn_size"
         app:layout_constraintBottom_toBottomOf="@+id/floatingActionButton"
         app:layout_constraintEnd_toStartOf="@+id/floatingActionButton3"
         app:layout_constraintStart_toEndOf="@+id/floatingActionButton"
         app:layout_constraintTop_toTopOf="@+id/floatingActionButton"
-        app:tint="@color/main_orange" />
+        app:tint="@color/main_orange"
+        style="@style/profile_soc_btn" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/floatingActionButton3"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginEnd="48dp"
+        android:layout_marginEnd="@dimen/profile_view_soc_btn_mEnd"
         android:backgroundTint="@color/white"
-        android:clickable="true"
         android:src="@drawable/vk_img_btn"
         app:backgroundTint="@color/main_orange"
         app:borderWidth="@dimen/border_with"
@@ -153,6 +124,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/floatingActionButton2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/floatingActionButton2"
-        app:tint="@color/main_orange" />
+        app:tint="@color/main_orange"
+        style="@style/profile_soc_btn" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

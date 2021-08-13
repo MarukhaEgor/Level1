@@ -11,4 +11,23 @@
     <dimen name="profile_view_soc_btn_mStart">48dp</dimen>
     <dimen name="profile_view_soc_btn_mTop">62dp</dimen>
     <dimen name="profile_view_soc_btn_mEnd">48dp</dimen>
+    <dimen name="reg_view_fillOut_txt_size">12sp</dimen>
+    <dimen name="reg_view_lets_get_txt_size">24sp</dimen>
+    <dimen name="chBx_correct_padding">-8dp</dimen>
+    <dimen name="profile_activ_sett_txtSize">24sp</dimen>
+    <dimen name="profile_activ_name_txt_size">18sp</dimen>
+    <dimen name="profile_activ_proff_txt_size">14sp</dimen>
+    <dimen name="reg_activ_signUp_lets_get_textView_top_padding">140dp</dimen>
+    <dimen name="signUp_activ_regBtn_mr_Btm">92dp</dimen>
+    <dimen name="signUp_activ_regBtn_height">55dp</dimen>
+    <dimen name="main_condit_textView_mrgStart">19dp</dimen>
+    <dimen name="main_condit_textView_mrgBttm">48dp</dimen>
+    <dimen name="main_condit_textView_mrgEnd">13dp</dimen>
+    <dimen name="main_condit_textView_txt_size">12sp</dimen>
+    <dimen name="main_alr_have_acc_mrgStart">73dp</dimen>
+    <dimen name="main_alr_have_acc_mrg_End">114dp</dimen>
+    <dimen name="main_alr_have_acc_mrgBttm">14dp</dimen>
+    <dimen name="main_signUp_txtView_mrg_Start">258dp</dimen>
+    <dimen name="main_signUp_txtView_mrgBttm">14dp</dimen>
+    <dimen name="pass_text_input_layout_mrgTop">40dp</dimen>
 </resources>

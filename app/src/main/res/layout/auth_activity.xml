@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AuthActivity"
+    android:background="@color/main_background">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/email_text_input_layout"
+        android:layout_marginTop="80dp"
+        android:hint="@string/e_mail_hint"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signUp_fillOut_textView"
+        style="@style/editText_register"
+        app:errorEnabled="true">
+        <com.google.android.material.textfield.TextInputEditText
+            android:textCursorDrawable="@null"
+            android:id="@+id/email_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/main_background"
+            android:textColor="@color/white"
+            android:inputType="textEmailAddress"
+            app:errorEnabled="true"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/pass_text_input_layout"
+        android:layout_marginTop="@dimen/pass_text_input_layout_mrgTop"
+        android:hint="@string/password_hint"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email_text_input_layout"
+        style="@style/editText_register"
+        app:errorEnabled="true">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password_edit_text"
+            android:textCursorDrawable="@null"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/main_background"
+            android:textColor="@color/white"
+            android:inputType="textPassword"
+            app:errorEnabled="true"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/signUp_lets_get_textView"
+        android:text="@string/reg_view_let_s_get_acquainted"
+        android:textSize="@dimen/reg_view_lets_get_txt_size"
+        android:layout_marginTop="@dimen/reg_activ_signUp_lets_get_textView_top_padding"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/signUp_lets_get_textView"/>
+
+    <TextView
+        android:id="@+id/signUp_fillOut_textView"
+        android:text="@string/reg_view_fillOut"
+        android:textSize="@dimen/reg_view_fillOut_txt_size"
+        app:layout_constraintEnd_toEndOf="@+id/signUp_lets_get_textView"
+        app:layout_constraintStart_toStartOf="@+id/signUp_lets_get_textView"
+        app:layout_constraintTop_toBottomOf="@+id/signUp_lets_get_textView"
+        style="@style/signUp_lets_get_textView"
+        />
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/signUp_chBx_text"
+        android:layout_marginStart="@dimen/chBx_correct_padding"
+        android:textColor="@color/grey_text_color"
+        android:fontFamily="@font/open_sans_light"
+        app:layout_constraintStart_toStartOf="@+id/pass_text_input_layout"
+        app:layout_constraintTop_toBottomOf="@+id/pass_text_input_layout" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/signUp_reg_btn"
+        android:layout_height="@dimen/signUp_activ_regBtn_height"
+        android:textColor="@color/white"
+        android:textAllCaps="true"
+        android:text="@string/signUp_activ_regBtn_txt"
+        android:layout_marginBottom="@dimen/signUp_activ_regBtn_mr_Btm"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        style="@style/profile_btn_edit"/>
+
+    <TextView
+        android:id="@+id/main_condit_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/main_condit_textView_mrgStart"
+        android:layout_marginBottom="@dimen/main_condit_textView_mrgBttm"
+        android:layout_marginEnd="@dimen/main_condit_textView_mrgEnd"
+        android:fontFamily="@font/open_sans_light"
+        android:gravity="center"
+        android:text="@string/reg_view_msg_terms"
+        android:textColor="@color/white"
+        android:textSize="@dimen/main_condit_textView_txt_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/signUp_reg_btn" />
+
+    <TextView
+        android:id="@+id/main_alr_have_acc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/main_alr_have_acc_mrgStart"
+        android:layout_marginEnd="@dimen/main_alr_have_acc_mrg_End"
+        android:layout_marginBottom="@dimen/main_alr_have_acc_mrgBttm"
+        android:textColor="@color/grey_text_color"
+        android:fontFamily="@font/open_sans_light"
+        android:text="@string/reg_activity_have_acc_msg"
+        app:layout_constraintTop_toBottomOf="@id/main_condit_textView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/main_signUp_txtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/main_signUp_txtView_mrg_Start"
+        android:layout_marginBottom="@dimen/main_signUp_txtView_mrgBttm"
+        android:textColor="@color/white"
+        android:fontFamily="@font/open_sans_light"
+        android:text="@string/reg_activity_sing_up_txtBtn"
+        app:layout_constraintTop_toBottomOf="@id/main_condit_textView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

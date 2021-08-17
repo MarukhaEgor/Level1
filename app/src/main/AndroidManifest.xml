@@ -10,10 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Level1">
         <activity
-            android:name=".MainActivity"
+            android:name=".ProfileActivity"
             android:exported="true" />
         <activity
-            android:name=".AuthActivity"
+            android:name=".SingUpActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

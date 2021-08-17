@@ -1,33 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="main_btns_paddings_16">16dp</dimen>
+    <dimen name="main_paddings_16">16dp</dimen>
     <dimen name="rnd_social_btn_size">50dp</dimen>
     <dimen name="border_with">2dp</dimen>
     <dimen name="btn_elevation">0dp</dimen>
     <dimen name="edit_btn_height">40dp</dimen>
-    <dimen name="settings_label_paddings">16dp</dimen>
-    <dimen name="avatar_profile_padding">48dp</dimen>
-    <dimen name="profile_view_top_part_height">360dp</dimen>
-    <dimen name="profile_view_soc_btn_mStart">48dp</dimen>
-    <dimen name="profile_view_soc_btn_mTop">62dp</dimen>
-    <dimen name="profile_view_soc_btn_mEnd">48dp</dimen>
-    <dimen name="reg_view_fillOut_txt_size">12sp</dimen>
-    <dimen name="reg_view_lets_get_txt_size">24sp</dimen>
     <dimen name="chBx_correct_padding">-8dp</dimen>
-    <dimen name="profile_activ_sett_txtSize">24sp</dimen>
-    <dimen name="profile_activ_name_txt_size">18sp</dimen>
-    <dimen name="profile_activ_proff_txt_size">14sp</dimen>
-    <dimen name="reg_activ_signUp_lets_get_textView_top_padding">140dp</dimen>
-    <dimen name="signUp_activ_regBtn_mr_Btm">92dp</dimen>
+    <dimen name="txtSize_24">24sp</dimen>
+    <dimen name="txtSize_18">18sp</dimen>
+    <dimen name="txtSize_14">14sp</dimen>
+    <dimen name="txtSize_12">12sp</dimen>
+    <dimen name="sighn_up_view_top_tv_padding">140dp</dimen>
     <dimen name="signUp_activ_regBtn_height">55dp</dimen>
-    <dimen name="main_condit_textView_mrgStart">19dp</dimen>
-    <dimen name="main_condit_textView_mrgBttm">48dp</dimen>
-    <dimen name="main_condit_textView_mrgEnd">13dp</dimen>
-    <dimen name="main_condit_textView_txt_size">12sp</dimen>
-    <dimen name="main_alr_have_acc_mrgStart">73dp</dimen>
-    <dimen name="main_alr_have_acc_mrg_End">114dp</dimen>
-    <dimen name="main_alr_have_acc_mrgBttm">14dp</dimen>
-    <dimen name="main_signUp_txtView_mrg_Start">258dp</dimen>
-    <dimen name="main_signUp_txtView_mrgBttm">14dp</dimen>
     <dimen name="pass_text_input_layout_mrgTop">40dp</dimen>
+    <dimen name="editText_register_pdng_start">-16dp</dimen>
+    <dimen name="profile_activ_btn_height">48dp</dimen>
 </resources>

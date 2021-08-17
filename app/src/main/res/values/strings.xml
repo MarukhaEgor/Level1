@@ -15,4 +15,6 @@
     <string name="reg_view_msg_terms">By clicking Register you agree to our Terms \n and Conditions</string>
     <string name="reg_activity_have_acc_msg">Already have an account?</string>
     <string name="reg_activity_sing_up_txtBtn">Sign in</string>
+    <string name="wrong_pass_msg">Short or empty pass!</string>
+    <string name="wrong_mail_msg">Wrong e-mail!</string>
 </resources>

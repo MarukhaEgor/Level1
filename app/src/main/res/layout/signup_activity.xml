@@ -7,26 +7,32 @@
     android:background="@color/main_background"
     tools:context=".SingUpActivity">
 
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.3" />
+
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/signUpViewTopTv"
         style="@style/signUp_lets_get_textView"
-        android:layout_marginTop="@dimen/sighn_up_view_top_tv_padding"
         android:layout_marginStart="@dimen/main_paddings_16"
         android:layout_marginEnd="@dimen/main_paddings_16"
         android:text="@string/reg_view_let_s_get_acquainted"
-        android:textSize="@dimen/txtSize_24"
-        app:layout_constraintBottom_toTopOf="@+id/signUpViewTopTv2"
+        app:layout_constraintBottom_toTopOf="@+id/singUpFillOutTv"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"/>
 
     <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/signUpViewTopTv2"
+        android:id="@+id/singUpFillOutTv"
         style="@style/signUp_lets_get_textView"
         android:text="@string/reg_view_fillOut"
         android:textSize="@dimen/txtSize_14"
-        app:layout_constraintBottom_toTopOf="@+id/signUpViewEmailTIL"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
         app:layout_constraintEnd_toEndOf="@+id/signUpViewTopTv"
         app:layout_constraintStart_toStartOf="@+id/signUpViewTopTv"
         app:layout_constraintTop_toBottomOf="@+id/signUpViewTopTv" />
@@ -37,12 +43,12 @@
         android:hint="@string/e_mail_hint"
         app:errorEnabled="true"
         app:layout_constraintBottom_toTopOf="@+id/signUpViewPassTIL"
-        app:layout_constraintLeft_toLeftOf="@+id/signUpViewTopTv2"
-        app:layout_constraintRight_toRightOf="@+id/signUpViewTopTv2"
-        app:layout_constraintTop_toBottomOf="@+id/signUpViewTopTv2">
+        app:layout_constraintLeft_toLeftOf="@+id/singUpFillOutTv"
+        app:layout_constraintRight_toRightOf="@+id/singUpFillOutTv"
+        app:layout_constraintTop_toBottomOf="@+id/guideline">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/signUpViewTemailEt"
+            android:id="@+id/signUpViewEmailEt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/main_background"
@@ -89,8 +95,8 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/signUpViewRegBtn"
-        style="@style/profile_btn_edit"
-        android:layout_height="@dimen/signUp_activ_regBtn_height"
+        style="@style/main_btn_with_border_style"
+        android:layout_height="@dimen/signUp_activity_regBtn_height"
         android:text="@string/signUp_activ_regBtn_txt"
         android:textAllCaps="true"
         android:textColor="@color/white"
@@ -135,4 +141,6 @@
         app:layout_constraintBottom_toBottomOf="@+id/signUpViewQuestTv"
         app:layout_constraintEnd_toEndOf="@+id/signUpViewConditTv"
         app:layout_constraintStart_toEndOf="@+id/signUpViewQuestTv" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

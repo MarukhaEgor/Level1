@@ -5,18 +5,25 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Patterns
 import android.view.View
-import android.widget.Button
 import com.google.android.material.textfield.TextInputEditText
 import com.google.android.material.textfield.TextInputLayout
+import com.marukhaegor.level1.databinding.SignupActivityBinding
+import com.marukhaegor.level1.utils.Constants
 
 class SingUpActivity : AppCompatActivity() {
-    lateinit var name: String
-    lateinit var secondName: String
+    private lateinit var binding: SignupActivityBinding
+    private lateinit var name: String
+    private lateinit var secondName: String
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        binding = SignupActivityBinding.inflate(layoutInflater)
         setContentView(R.layout.signup_activity)
-        val btn = findViewById<Button>(R.id.signUpViewRegBtn)
-        btn.setOnClickListener{
+        setListeners()
+
+    }
+
+    private fun setListeners() {
+        binding.signUpViewRegBtn.setOnClickListener {
             onClick()
         }
     }
@@ -26,34 +33,30 @@ class SingUpActivity : AppCompatActivity() {
     }
 
     private fun isValidMail(): Boolean{
-        val emailEditText = findViewById<View>(R.id.signUpViewTemailEt) as TextInputEditText
-        val email = emailEditText.text
-        val emailLayout = findViewById<View>(R.id.signUpViewEmailTIL) as TextInputLayout
+        val email = binding.signUpViewEmailEt.text
         if (email?.isNotEmpty() == true && Patterns.EMAIL_ADDRESS.matcher(email).matches()){
             email.substring(0, email.indexOf(".")).also { name = it }
             email.substring(email.indexOf(".") + 1, email.indexOf("@")).also { secondName = it }
             return true
         }
-        emailLayout.error = getString(R.string.wrong_mail_msg)
+        binding.signUpViewEmailTIL.error = getString(R.string.wrong_mail_msg)
         return false
     }
 
     private fun isValidPass(): Boolean{
-        val passEditText = findViewById<View>(R.id.signUpViewPassEt) as TextInputEditText
-        val pass = passEditText.text
-        val passLayout = findViewById<View>(R.id.signUpViewPassTIL) as TextInputLayout
-        if (pass?.isNotEmpty() == true && pass.length > 8){
+        val pass = binding.signUpViewPassEt.text
+        if (pass?.isNotEmpty() == true && pass.length > Constants.PASS_MIN_LENGTH){
             return true
         }
-        passLayout.error = getString(R.string.wrong_pass_msg)
+        binding.signUpViewEmailTIL.error = getString(R.string.wrong_pass_msg)
         return false
     }
 
     private fun onClick() {
         val intent = Intent(this, ProfileActivity::class.java)
         if (validChecker()) {
-            intent.putExtra("name",name)
-            intent.putExtra("secondName",secondName)
+            intent.putExtra(Constants.EXTRA_NAME,name)
+            intent.putExtra(Constants.EXTRA_SECOND_NAME,secondName)
             startActivity(intent)
         }
     }

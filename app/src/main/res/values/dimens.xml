@@ -10,9 +10,8 @@
     <dimen name="txtSize_18">18sp</dimen>
     <dimen name="txtSize_14">14sp</dimen>
     <dimen name="txtSize_12">12sp</dimen>
-    <dimen name="sighn_up_view_top_tv_padding">140dp</dimen>
-    <dimen name="signUp_activ_regBtn_height">55dp</dimen>
+    <dimen name="signUp_activity_regBtn_height">55dp</dimen>
     <dimen name="pass_text_input_layout_mrgTop">40dp</dimen>
-    <dimen name="editText_register_pdng_start">-16dp</dimen>
-    <dimen name="profile_activ_btn_height">48dp</dimen>
+    <dimen name="editText_register_padding_start">-16dp</dimen>
+    <dimen name="profile_activity_btn_height">48dp</dimen>
 </resources>
